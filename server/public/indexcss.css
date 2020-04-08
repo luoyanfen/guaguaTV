@@ -1,0 +1,146 @@
+#bigbox{
+	width: 79rem;
+	height: 46rem;
+	margin-left:  4rem;
+}
+#tit{
+	width: 25rem;
+	height: 3.4375rem;
+	color: #666666;
+	margin-bottom: 0.8rem;
+	line-height:  3.4375rem;
+	font-size: 28px;
+	font-weight: 700;
+	margin-top: -810px;
+}
+#left{
+	float: left;
+}
+#right{
+	margin-left: 820px;
+	margin-top: 10px;
+	float: right;
+}
+#xunhuan img{
+	width: 185px;
+	height: 259px;
+	float: left;
+}
+#xunhuan {
+	width: 49.625rem;
+	height: 45.875rem;
+}
+#dytitle{
+	width: 49.375rem;
+	height: 3.4375rem;
+	display: block;
+	text-align: justify;
+	line-height: 3.4375rem;
+	margin-bottom: 0.8rem;
+}
+#dytitle a{
+	text-decoration: none;
+	color: black;
+	font-size: 28px;
+	padding: 0px 625px 0 5px;
+	font-weight: 700;
+}
+#dytitle span{
+    padding: 0 11px 0 11px;	
+}
+#dytitle button{
+	background-color: white;
+	border:  0px solid white;
+	color: gray;
+}
+#conter{
+	width: 25rem;
+	height: 39.5625rem;
+	background-color: #f8f8f8;
+}
+#rightconter{
+	width: 21.5rem;
+	height: 4.75rem;
+	/* border-bottom:1px solid #EEEEEE; */
+	margin-left: 20px;
+	padding: 5px 0 20px 0;
+}
+#rightconter li{
+	list-style: none;
+	border-bottom:1px solid #EEEEEE;
+	padding: 10px 0 13.5px 0;
+
+}
+#conter a{
+	text-decoration: none;
+	color: grey;
+	display: block;
+	height: 4.75rem;
+}
+#litter{
+	color: grey;
+	margin-left: 5rem;
+}
+#bigtitle{
+	font-size: 24px;
+	margin-left:2rem;
+	margin-right: 0.9375rem;
+	color: black;
+	font-weight: 700;
+}
+#dytitle img{
+	width: 0.5625rem;
+	height: 0.5625rem;
+}
+#dytitle img:hover{
+	color: #FF5C38;
+	cursor: pointer;
+}
+#number{
+	margin-left: 1.25rem;
+	font-size: 40px;
+	color: #FF5C38;
+}
+#numberr{
+	margin-left: 1.25rem;
+	font-size: 40px;
+	color: #666666;
+}
+#iimg{
+	width: 1.875rem;
+	height: 1rem;
+}
+#time{
+	width: 185px;
+	height: 34px;
+	position: absolute;
+    padding: 220px 0px 4px 10px;
+    font-size: 17px;
+	color: white;
+    cursor: pointer;
+}
+#time span{
+	color:  #FF5C38;
+	font-size: 20px;
+}
+#onediv{
+	width: 185px;
+	height: 317px;
+	margin: 0 5px 30px 5px;
+	float: left;
+}
+#onediv a{
+	text-decoration: none;
+}
+#wenzijj{
+	padding: 270px 0 0 0 ;
+}
+#diyipai{
+	font-size: 18px;
+	font-weight: 700;
+	color: black;
+}
+#dierpai{
+	font-size: 14px;
+	color: #B2B2D8;
+}

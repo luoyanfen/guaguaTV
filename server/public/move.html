@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="./movehtml.css"/>
+		<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js">
+		</script>
+		<script type="text/javascript">
+			//监听函数在文档加载结束后自动执行
+			$(document).ready(function(){
+				show();
+			});
+			function show() {
+				$.ajax({
+					url:'/Clibiao.do',
+					type:'post',
+					dataType:'text',
+					data:{//传参数
+						method:'queryAll'
+					},
+					success(clazzArray) {
+						clazzArray = JSON.parse(clazzArray);
+						let moveinfo = null;
+					    for(let i=0; i<clazzArray.length; i++) {
+							moveinfo = clazzArray[i];
+							console.log(moveinfo);
+						$("#onediv").append(`<li><img src="${moveinfo.img}"></img> <div id="time">${moveinfo.time}</div><div id="wenzijj"><span id="diyipai">${moveinfo.wenzi1}</span><br></br><span title="${moveinfo.wenzi2}" id="dierpai"> ${moveinfo.wenzi2}</span></div></li>`)				
+						}
+					}
+				});
+			}
+		</script>
+	<!-- 	<script type="text/javascript">
+				function show() {
+				$.ajax({
+					url:'/Clibiao.do',
+					type:'post',
+					dataType:'text',
+					data:{//传参数
+						method:'queryAll'
+					},
+					success(clazzArray) {
+						clazzArray = JSON.parse(clazzArray);
+						let libiaonr = null;
+					    for(let i=0; i<clazzArray.length; i++) {
+							libiaonr = clazzArray[i];
+							console.log(libiaonr);
+							 $("#libiao").append("<li>"+libiaonr.pianming+"</li>")
+						}
+					}
+				});
+			}
+		</script> -->
+	</head>
+	<body>
+		  <div id="oneg">
+		  		<div id="title"><span>院线热映</span></div>
+		  		<div id="left">
+		  		<!-- 	<div id="noesu">
+		  				<ul id="libiao">
+							<li>
+								<a href="https://v.qq.com/x/cover/mzc00200vmvwq2r/j0941zzghoq.html"></a>
+		  					    <span title="灵兽·定档4.3">灵兽·定档4.3</span>
+							</li>		  					
+						</ul>					
+					</div> -->
+		  			<div id="noesu">
+		  				<div id="libiao">
+		  					<a href="https://v.qq.com/x/cover/mzc00200vmvwq2r/j0941zzghoq.html"></a>
+		  					<span title="灵兽·定档4.3">灵兽·定档4.3</span>
+		  				</div>
+		  				<div id="libiao">
+		  					<a href="https://v.qq.com/x/cover/mzc00200vmvwq2r/j0941zzghoq.html"></a>
+		  					<span title="忘川茶舍之铸剑祭魂">忘川茶舍之铸剑祭魂</span>
+		  				</div>
+		  				<div id="libiao">
+		  					<a href="https://v.qq.com/x/cover/mzc00200vmvwq2r/j0941zzghoq.html"></a>
+		  					<span title="降妖伏魔之定海神针">降妖伏魔之定海神针</span>
+		  				</div>
+		  				<div id="libiao">
+		  					<a href="https://v.qq.com/x/cover/mzc00200vmvwq2r/j0941zzghoq.html"></a>
+		  					<span title="看不见的枕边人.预告">看不见的枕边人.预告</span>
+		  				</div>
+		  				<div id="libiao">
+		  					<a href="https://v.qq.com/x/cover/mzc00200vmvwq2r/j0941zzghoq.html"></a>
+		  						<span title="狼群行动2.正在热播">狼群行动2.正在热播</span>
+		  				</div>
+		  				<div id="libiao">
+		  					<a href="https://v.qq.com/x/cover/mzc00200vmvwq2r/j0941zzghoq.html"></a>
+		  						<span title="变形金刚3">变形金刚3</span>
+		  				</div>
+		  				<div id="libiao">
+		  					<a href="https://v.qq.com/x/cover/mzc00200vmvwq2r/j0941zzghoq.html"></a>
+		  						<span title="九条命">九条命</span>
+		  				</div>
+		  				<div id="libiao">
+		  					<a href="https://v.qq.com/x/cover/mzc00200vmvwq2r/j0941zzghoq.html"></a>
+		  						<span title="猫妖传">猫妖传</span>
+		  				</div>
+		  			</div>
+		  			<div id="towsu">
+		  				<div id="libiao">
+		  					<a href="https://v.qq.com/x/cover/mzc00200vmvwq2r/j0941zzghoq.html"> </a>
+		  						<span title="妈妈你真棒">妈妈你真棒</span>
+		  				</div>
+		  				<div id="libiao">
+		  					<a href="https://v.qq.com/x/cover/mzc00200vmvwq2r/j0941zzghoq.html"></a>
+		  						<span title="美味侦探">美味侦探</span>
+		  				</div>
+		  				<div id="libiao">
+		  					<a href="https://v.qq.com/x/cover/mzc00200vmvwq2r/j0941zzghoq.html"></a>
+		  						<span title="衣柜里的冒险王">衣柜里的冒险王</span>
+		  				</div>
+		  				<div id="libiao">
+		  					<a href="https://v.qq.com/x/cover/mzc00200vmvwq2r/j0941zzghoq.html"></a>
+		  						<span title="蓝月">蓝月</span>
+		  				</div>
+		  				<div id="libiao">
+		  					<a href="https://v.qq.com/x/cover/mzc00200vmvwq2r/j0941zzghoq.html"></a>
+		  						<span title="降龙罗汉">降龙罗汉</span>
+		  				</div>
+		  				<div id="libiao">
+		  					<a href="https://v.qq.com/x/cover/mzc00200vmvwq2r/j0941zzghoq.html"></a>
+		  						<span title="记忆大师">记忆大师</span>
+		  				</div>
+		  				<div id="libiao">
+		  					<a href="https://v.qq.com/x/cover/mzc00200vmvwq2r/j0941zzghoq.html"></a>
+		  						<span title="倔强萝卜">倔强萝卜</span>
+		  				</div>
+		  				<div id="libiao">
+		  					<a href="https://v.qq.com/x/cover/mzc00200vmvwq2r/j0941zzghoq.html"></a>
+		  						<span title="蛋炒饭">蛋炒饭</span>
+		  				</div>
+		  			</div>
+		  					  		
+				</div>
+		  		<div id="right">
+		  			<ul id="onediv">
+		  				<li id="showli">
+							   <a href="https://v.qq.com/x/cover/mzc00200kqs6xxb/a30734941gh.html">
+								<img src="https://puui.qpic.cn/tv/0/662391838_1280720/0"></img>
+								<div id="time"> 03:58 </div>
+								<div id="wenzijj">
+									<span id="diyipai">忘川茶舍之铸剑祭魂</span><br></br>
+									<span title="剑阵齐发!侠魔终极对决！" id="dierpai">剑阵齐发!侠魔终极对决！</span>
+								</div>
+							</a>
+						</li>
+		  			</ul>
+		  		
+				</div>
+		  </div>
+		  <div id="second">
+		  	<div id="titlee"><span>第32届金鸡奖佳片大赏</span></div>
+		  		<div id="Errors">
+		  			<div id="onedivv">
+		  				<a href="https://v.qq.com/x/cover/og0eputlxwet1cn.html">
+		  					<img src="http://i.gtimg.cn/qqlive/img/jpgcache/files/qqvideo/o/og0eputlxwet1cn.jpg"></img>
+		  					<div id="timee"> 01:56:12 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span>9.4</span></div>
+		  					<div id="wenzij">
+		  						<span id="diyipaii">我不是药神</span><br></br>
+		  						<span id="dierpaii" title="王宝强爆笑喜剧">双面徐峥走私印度抗癌药 </span>
+		  					</div>
+		  				</a>
+		  			</div>
+		  			<div id="onedivv">
+		  				<a href="https://v.qq.com/x/cover/jmimcsf10cl5tsp.html">
+		  					<img src="http://i.gtimg.cn/qqlive/img/jpgcache/files/qqvideo/j/jmimcsf10cl5tsp.jpg"></img>
+		  					<div id="timee"> 02:54:29 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span>8.7</span></div>
+		  					<div id="wenzij">
+		  						<span id="diyipaii">地久天长</span><br></br>
+		  						<span id="dierpaii" title="聚焦时代变迁下的家庭样貌">聚焦时代变迁下的家庭样貌 </span>
+		  					</div>
+		  				</a>
+		  			</div>
+		  			<div id="onedivv">
+		  				<a href="https://v.qq.com/x/cover/hk765ykwj4bjpcl.html">
+		  					<img src="http://puui.qpic.cn/vcover_vt_pic/0/hk765ykwj4bjpcl1576210556/350"></img>
+		  					<div id="timee"> 02:34:28&nbsp; &nbsp; &nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp; <span>7.6</span></div>
+		  					<div id="wenzij">
+		  						<span id="diyipaii">我和我的祖国</span><br></br>
+		  						<span id="dierpaii" title="燃爆了！为祖国疯狂打call  ">燃爆了！为祖国疯狂打call  </span>
+		  					</div>
+		  				</a>
+		  			</div>
+		  			<div id="onedivv">
+		  				<a href="https://v.qq.com/x/cover/mzc00200f2bo62j.html">
+		  					<img src="http://puui.qpic.cn/vcover_vt_pic/0/mzc00200f2bo62j1583918729237/350"></img>
+		  					<div id="timee"> 01:26:46 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span>7.8</span></div>
+		  					<div id="wenzij">
+		  						<span id="diyipaii">如来神掌</span><br></br>
+		  						<span id="dierpaii" title="邪神面具戴上无敌但摘不掉  ">邪神面具戴上无敌但摘不掉  </span>
+		  					</div>
+		  				</a>
+		  			</div>
+		  			<div id="onedivv">
+		  				<a href="https://v.qq.com/x/cover/mzc002007sl01sg.html">
+		  					<img src="http://puui.qpic.cn/vcover_vt_pic/0/mzc002007sl01sg1577773696/350"></img>
+		  					<div id="timee"> 02:10:00 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span>7.5</span></div>
+		  					<div id="wenzij">
+		  						<span id="diyipaii">被光抓走的人</span><br></br>
+		  						<span id="dierpaii" title="黄渤王珞丹直面爱情真相 ">黄渤王珞丹直面爱情真相 </span>
+		  					</div>
+		  				</a>
+		  			</div>
+		  			<div id="onedivv">
+		  				<a href="https://v.qq.com/x/cover/fgqtuu38z91hfyw.html">
+		  					<img src="http://puui.qpic.cn/vcover_vt_pic/0/fgqtuu38z91hfyw1566897316/350"></img>
+		  					<div id="timee"> 02:13:43 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span>8.4</span></div>
+		  					<div id="wenzij">
+		  						<span id="diyipaii">一出好戏</span><br></br>
+		  						<span id="dierpaii" title="黄渤导演处女作  ">黄渤导演处女作</span>
+		  					</div>
+		  				</a>
+		  			</div>
+		  		</div>
+		  </div>
+		  <div id="second">
+			<div id="titlee"><span>公路片.喜剧相关电影</span></div>
+				<div id="Errors">
+					<div id="onedivv">
+						<a href="https://v.qq.com/x/cover/wlb7ba6jg8x1rjm.html">
+							<img src="http://puui.qpic.cn/vcover_vt_pic/0/wlb7ba6jg8x1rjm1567676483/350"></img>
+							<div id="timee"> 01:27:52 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span>8.6</span></div>
+							<div id="wenzij">
+								<span id="diyipaii">人在囧途</span><br></br>
+								<span id="dierpaii" title="王宝强爆笑喜剧">王宝强爆笑喜剧</span>
+							</div>
+						</a>
+					</div>
+					<div id="onedivv">
+						<a href="https://v.qq.com/x/cover/6jspnqlmjx8fny6.html">
+							<img src="http://puui.qpic.cn/vcover_vt_pic/0/6jspnqlmjx8fny6t1470994209.jpg/350"></img>
+							<div id="timee"> 01:02:19 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span>6.7</span></div>
+							<div id="wenzij">
+								<span id="diyipaii">忘川茶舍之铸剑祭魂</span><br></br>
+								<span id="dierpaii" title="剑阵齐发!侠魔终极对决！  ">剑阵齐发!侠魔终极对决！</span>
+							</div>
+						</a>
+					</div>
+					<div id="onedivv">
+						<a href="https://v.qq.com/x/cover/bdbcer5v3qcjioz.html">
+							<img src="http://puui.qpic.cn/vcover_vt_pic/0/bdbcer5v3qcjioz1540523317/350"></img>
+							<div id="timee"> 02:14:41&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span>9.1</span></div>
+							<div id="wenzij">
+								<span id="diyipaii">菊次郎的夏天</span><br></br>
+								<span id="dierpaii" title="怪大叔和萌正太的温暖旅程 ">怪大叔和萌正太的温暖旅程 </span>
+							</div>
+						</a>
+					</div>
+					<div id="onedivv">
+						<a href="https://v.qq.com/x/cover/y4e3eyd98p7ezvo.html">
+							<img src="http://puui.qpic.cn/vcover_vt_pic/0/y4e3eyd98p7ezvo1483534283/350"></img>
+							<div id="timee"> 01:45:03 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span>9.0</span></div>
+							<div id="wenzij">
+								<span id="diyipaii">一夜风流</span><br></br>
+								<span id="dierpaii" title="不俗的爱情童话 ">不俗的爱情童话 </span>
+							</div>
+						</a>
+					</div>
+					<div id="onedivv">
+						<a href="https://v.qq.com/x/cover/q7728zcspgep953.html">
+							<img src="http://puui.qpic.cn/vcover_vt_pic/0/q7728zcspgep9531527558826/350"></img>
+							<div id="timee"> 01:28:20 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span>7.4</span></div>
+							<div id="wenzij">
+								<span id="diyipaii">让我怎么相信你</span><br></br>
+								<span id="dierpaii" title="梁天闫妮爆笑演绎京味儿喜剧">梁天闫妮爆笑演绎京味喜剧</span>
+							</div>
+						</a>
+					</div>
+					<div id="onedivv">
+						<a href="https://v.qq.com/x/cover/yrk9u3rwbp1gmws.html">
+							<img src="http://puui.qpic.cn/vcover_vt_pic/0/yrk9u3rwbp1gmws1482828928/350"></img>
+							<div id="timee"> 01:41:20 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span>8.2</span></div>
+							<div id="wenzij">
+								<span id="diyipaii">乘风破浪</span><br></br>
+								<span id="dierpaii" title="邓超穿越时空见证父母爱情 ">邓超穿越时空见证父母爱情 </span>
+							</div>
+						</a>
+					</div>
+				</div>
+		  </div>
+		  <div id="buttom">
+		  	<div id="remenbox">
+		  		<div id="libiaonr">
+		  			<ul id="ulli">
+		  					<li>电视剧</li>
+		  					<li>综艺</li>
+		  					<li>电影</li>
+		  					<li>搞笑</li>
+		  					<li>娱乐</li>
+		  					<li>音乐</li>
+		  					<li>动漫</li>
+		  					<li>游戏</li>
+		  					<li>生活</li>
+		  					<li>纪录片</li>
+		  					<li>新闻</li>
+		  					<li>体育</li>
+		  			</ul>
+		  		</div>
+		  		</div>
+		  		<div id="tertuijian">
+		  			<div id="libiaonrr">
+		  				<ul id="ullii">
+		  					<li>原创综艺</li>
+		  					<li>自制电影</li>
+		  					<li>杀毒软件</li>
+		  					<li>无厘头搞笑</li>
+		  				</ul>
+		  			</div>
+		  		</div>
+		  		<div id="imgg">
+		  			<div id="imgwenzi">
+		  					<div id="tow">
+		  						<img src="./img/do-windows.png">
+								<p>电脑版</p>
+		  					</div>
+		  					<div id="three">
+		  						<img src="./img/aple.png">
+								<p>MAC版</p>
+		  					</div>
+		  					<div id="four">
+		  						<img src="./img/ipad.png">
+								<p>IPad版</p>
+		  					</div>
+		  			</div>
+		  		</div>
+		  		<div id="tertuijiana">
+		  			<div id="libiaonrrr">
+		  				<ul id="ullii">
+		  					<li>客服</li>
+		  					<li>反馈</li>
+		  					<li>侵权投诉</li>
+		  					<li>免广告合作</li>
+		  				</ul>
+		  			</div>
+		  		</div>
+		  </div>
+		  <div id="xian"></div>
+		  <div id="dibuwenzi">
+		  		<div id="diyi">
+		  			<a href="https://www.qq.com/culture.shtml">粤网文[2017]6138-1456号</a> 
+		  	        | 增值电信业务经营许可证：<a href="https://www.qq.com/icp.shtml">粤B2-20090059</a>
+		  		</div>
+		  		<div id="dier">
+		  			<a href="http://www.tencent.com/">关于腾讯</a> |
+		  			<a href="http://www.tencent.com/index_e.shtml">About Tencent</a> |
+		  			<a href="http://www.qq.com/contract.shtml">服务条款</a> |
+		  			<a href="http://www.tencentmind.com/">广告服务</a> |
+		  			<a href="http://www.qq.com/map/">网站导航</a>
+		  		</div>
+		  		<div id="disan">
+		  			Copyright © 1998 - 2020 Tencent. All Rights Reserved.				
+		  		</div>
+		  </div>		
+	</body>
+</html>

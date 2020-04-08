@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="indexcss.css"/>
+		<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js">
+		</script>
+		<script type="text/javascript">
+			//监听函数在文档加载结束后自动执行
+			$(document).ready(function(){
+				show();
+			});
+			function show() {
+				$.ajax({
+					url:'/Clazz.do',
+					type:'post',
+					dataType:'text',
+					data:{//传参数
+						method:'queryAll'
+					},
+					success(clazzArray) {
+						clazzArray = JSON.parse(clazzArray);
+						let mainmainmain = null;
+					    for(let i=0; i<clazzArray.length; i++) {
+							main = clazzArray[i];
+							console.log(main);
+						$("#rightconter").append(`<li><a href="#" title="${main.abq}"><span id="number">${main.number}</span><span id="bigtitle">${main.bigtitle}</span> <span>${main.dhuliang}</span><span id="litter">${main.litter}</span></a></li>`)				
+						}
+					}
+				});
+			}
+		</script>
+	</head>
+	<body>
+		
+		<div id="bigbox">
+		 	<div id="left">
+		 		<div id="dytitle">
+		 			<a href="http://localhost:3000/move.html">电影</a>
+		 		    <img src="./img/after.png"></img> <span id="nuber">1/2 </span> <img src="./img/liter.png"></img>
+		 		</div>
+		 		<div id="xunhuan">
+		 			<div id="onediv">
+		 				<a href="https://v.qq.com/x/cover/mzc00200okqa9qt.html">	
+		 					<img src="http://puui.qpic.cn/vcover_vt_pic/0/mzc00200zzp36rk1585487821863/350"></img>
+		 				     <div id="time"> 01:02:19 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span>6.7</span></div>
+		 					 <div  id="wenzijj">
+		 						 <span id="diyipai">忘川茶舍之铸剑祭魂</span><br></br>
+		 						 <span id="dierpai">剑阵齐发!侠魔终极对决！</span>
+		 					 </div>
+		 				</a>
+		 			</div>
+		 			<div id="onediv">
+		 				<a href="https://v.qq.com/x/cover/mzc00200okqa9qt.html">	
+		 					<img src="http://puui.qpic.cn/vcover_vt_pic/0/mzc00200okqa9qt1585114348541/350"></img>
+		 				     <div id="time"> 01:31:13 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+		 					     <span>7.2</span></div>
+		 					 <div id="wenzijj">
+		 						 <span id="diyipai">妈妈你真棒</span><br></br>
+		 						 <span id="dierpai">熊孩子领养机器人做妈妈</span>
+		 					 </div>
+		 				</a>
+		 			</div>
+		 			<div id="onediv">
+		 				<a href="https://v.qq.com/x/cover/mzc00200okqa9qt.html">	
+		 					<img src="http://puui.qpic.cn/vcover_vt_pic/0/v32nwd2khrrupi71585202991909/350"></img>
+		 				     <div id="time"> 01:47:45 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+		 					       <span>8.0</span></div>
+		 					 <div id="wenzijj">
+		 						 <span id="diyipai">小飞象</span><br></br>
+		 						 <span id="dierpai">全新温情演绎经典故事 </span>
+		 					 </div>
+		 				</a>
+		 			</div>
+		 			<div id="onediv">
+		 				<a href="https://v.qq.com/x/cover/mzc00200okqa9qt.html">	
+		 					<img src="http://puui.qpic.cn/vcover_vt_pic/0/mzc002006tq1rz21585288252262/350"></img>
+		 				     <div id="time"> 01:02:10 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span>6.7</span></div>
+		 					 <div id="wenzijj">
+		 						 <span id="diyipai">降妖伏魔之定海神针</span><br></br>
+		 						 <span id="dierpai"> 后传版鬼畜大圣再闹天宫 </span>
+		 					 </div>
+		 				</a>
+		 			</div>
+		 			<div id="onediv">
+		 				<a href="https://v.qq.com/x/cover/mzc00200okqa9qt.html">	
+		 					<img src="http://puui.qpic.cn/vcover_vt_pic/0/mzc00200wookd591583389670365/350"></img>
+		 				     <div id="time"> 01:27:45 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span>7.6</span></div>
+		 					 <div id="wenzijj">
+		 						 <span id="diyipai">狼群行动2</span><br></br>
+		 						 <span id="dierpai">樊少皇殊死救援彰显血性</span>
+		 					 </div>
+		 				</a>
+		 			</div>
+		 			<div id="onediv">
+		 				<a href="https://v.qq.com/x/cover/mzc00200okqa9qt.html">	
+		 					<img src="http://puui.qpic.cn/vcover_vt_pic/0/mzc00200lt7tna91585017219091/350"></img>
+		 				     <div id="time"> 01:35:38 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span>7.5</span></div>
+		 					 <div id="wenzijj">
+		 						 <span id="diyipai">衣柜里的冒险王</span><br></br>
+		 						 <span id="dierpai">秃头社畜的脱单指南 </span>
+		 					 </div>
+		 				</a>
+		 			</div>
+		 			<div id="onediv">
+		 				<a href="https://v.qq.com/x/cover/mzc00200okqa9qt.html">	
+		 					<img src="http://puui.qpic.cn/vcover_vt_pic/0/mzc00200i3sxjmo1584850878675/350"></img>
+		 				     <div id="time"> 01:17:38 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span>7.7</span></div>
+		 					 <div id="wenzijj">
+		 						 <span id="diyipai">我当摸金校尉的那些年</span><br></br>
+		 						 <span id="dierpai">千年古墓蜈蚣棺！鬼新娘！ </span>
+		 					 </div>
+		 				</a>
+		 			</div>
+		 			<div id="onediv">
+		 				<a href="https://v.qq.com/x/cover/mzc00200okqa9qt.html">	
+		 					<img src="http://puui.qpic.cn/vcover_vt_pic/0/mzc00200ffdrmv01584541180656/350"></img>
+		 				     <div id="time"> 01:26:13 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span>7.7</span></div>
+		 					 <div id="wenzijj">
+		 						 <span id="diyipai">美味侦探</span><br></br>
+		 						 <span id="dierpai">神秘美食凶杀案连环不断 </span>
+		 					 </div>
+		 				</a>
+		 			</div>			
+		 	</div>
+		 	<div id="right">
+		 		<div id="tit">
+		 			<span>电影排行榜</span>
+		 		</div>
+		 		<div id="conter">
+		 			<ul id="rightconter">
+		 				<li>
+							<!-- <a href="" title="奇门遁甲">
+								<span id="number">1</span>
+								<span id="bigtitle">奇门遁甲</span> <span>4695.3万</span>
+								<span id="litter">天师召唤生死符血斩大蛇</span>
+							</a> -->
+						</li>
+		 			</ul>
+		 			
+		 		</div>
+		   </div>
+		 </div>
+		</div>
+		
+	</body>
+</html>

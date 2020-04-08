@@ -1,0 +1,339 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+#root{
+	
+}
+.appbox{
+	width:82.3125rem;
+}#bigbox{
+	padding: 0 15px 0 15px;
+	text-align: center;
+}
+#oneg{
+	padding: 0 0px 0 0px;
+}
+#title{
+	width: 15.25rem;
+	padding-bottom: 1.125rem;
+}
+#title span{
+	padding: 0 0 0 1.25rem;
+	font-size: 30px;
+}
+#left span:hover{
+	color: #FF5C38;
+}
+#left{
+	padding: 0 20px 0 20px;
+	width: 27.25rem;
+	height: 22.125rem;
+	display:inline-block;
+}
+#libiao{
+	width: 10.8125rem;
+	height: 40px;
+	background-color: #F8F8F8;
+	margin: 10px ;
+	line-height: 2.3125rem;
+	padding: 0 0 0 1.25rem;
+	border-radius: 5%;
+}
+#noesu{
+	float: left;
+}
+#towsu{
+	float: right;
+	}
+#libiao a{
+	color: black;
+	font-size: 18px;
+	text-decoration: none;
+}
+#libiao span{
+	padding: ;
+}
+#right{
+	width: 51.75rem;
+    float: right;
+    margin-right: 0px;
+}
+#onediv li{
+	list-style: none;
+	display: inline;
+	float: left;	margin: 10px 10px 30px 10px;
+}
+#onediv ul{
+	width: 10.5625rem;
+	height:11rem;
+	float: left;
+}
+#showli{
+	margin: 10px 10px 30px 10px;
+    width: 9.5625rem;
+    height: 6.5625rem;
+}
+ #onediv a{
+	text-decoration: none;
+}#time{
+	width: 50px;
+	height: 34px;
+	position: absolute;
+    font-size: 18px;
+	color: white;
+    cursor: pointer;
+     margin-top: -33px;
+    padding: 0 0 0 15px;
+}
+#time span{
+	color:  #FF5C38;
+	font-size: 16px;
+}
+#wenzijj{
+	 padding:10px 0 0 0 ; 
+}
+#onediv img{
+	width: 9.5625rem;
+	height: 6.5625rem;
+	border-radius: 10%;
+}#diyipai{
+	font-size: 17px;
+	font-weight: 700;
+	color: black;
+}
+#diyipaii:hover{
+	color: #FF5C38;;
+}
+#dierpaii:hover{
+	color: #FF5C38;;
+}
+#dierpai{
+	font-size: 14px;
+	color: #B2B2D8;
+}
+#titlee{
+	padding: 4.5rem 0 2.25rem 0; 
+}
+#titleee{
+	padding: 14.5rem 138px 2.25rem 0;
+    font-size: 40px;
+}
+#titlee span{
+	font-size: 30px;
+}
+#second{
+	width: 73.25rem;
+    padding: 0 40px 40px 24px;
+}
+#onedivv img{
+    width: 10.5625rem;
+    height: 14.1875rem;
+
+}
+#onedivv{
+	width: 10.5625rem;
+	height:20rem;
+	 margin: 0 27px 30px 5px; 
+	float: left;
+}
+#onedivv a{
+	text-decoration: none;
+}
+#wenzij{
+	 padding:10px 0 0 0 ; 
+}
+#timee{
+	width: 124px;
+	height: 34px;
+	position: absolute;
+    font-size: 12px;
+	color: white;
+    cursor: pointer;
+    margin-top: -40px;
+    padding: 0 0 0 15px;
+}
+#timee span{
+	color:  #FF5C38;
+	font-size: 16px;
+}
+#diyipaii{
+	font-size: 17px;
+	font-weight: 700;
+	color: black;
+}
+#dierpaii{
+	font-size: 14px;
+	color: #B2B2D8;
+}#diyipai:hover{
+	color: #FF5C38;
+}
+#buttom{
+	margin-top: 18.6875rem;
+	width: 84.25rem;
+	height: 440px;
+	border-top: 2px solid #FF5C38;
+}
+#Errors{
+	width: 83rem;
+    padding: 0 0 0 25px ;
+}
+#secondd{
+	width: 94.25rem;
+	padding: 50px 80px 0 80px;
+}
+#remenbox{
+	width: 16.125rem;
+    height: 13rem;
+    margin:10px 30px 20px 96px;
+}#remenpindao{
+	width: 14.25rem;
+	height: 2.25rem;
+	color: #666666;
+	font-size: 23px;
+	font-weight: 700;
+	padding: 0 0 0 15px;
+}
+#libiaonr{
+	width: 24rem;
+	height: 10.25rem;
+		padding: 42px 0 0 0;
+}
+#ulli{
+	list-style: none;
+}
+#ulli li{
+		width: 3.75rem;
+		height: 2.5rem;
+		padding: 7px 10px 7px 10px;
+		display: inline;
+		float: left;
+}
+#ulli li:hover{
+	color: #E75537;
+}
+#tertuijian{
+    width: 8.25rem;
+    height: 14.375rem;
+    margin-left:22.75rem;
+    margin-top: -186px;
+}
+#wenzititle{
+	float: left;
+	width: 77.25rem;
+	display: block;
+}
+#wenzititle span{
+	    padding: 0 172px 0 107px;
+		color: #666666;
+		font-weight: 700;
+}
+.fuwu{
+	
+}
+#testuij{
+	width: 16.25rem;
+	height: 2.25rem;
+	color: #666666;
+	font-size: 23px;
+	font-weight: 700;
+	padding: 0 0 0 10px;
+}#libiaonrr{
+    width: 9rem;
+	height: 10.25rem;
+	margin-left: 80px;
+}
+#ullii{
+	list-style: none;
+}
+#ullii li{
+   	width: 5.75rem;
+    height: 2.5rem;	
+    padding: 7px 10px 7px 10px;
+}#ullii li:hover{
+	color: #E75537;
+}#remenboxx{
+	width: 18.125rem;
+	height: 13.3125rem;
+	margin: 50px 30px 20px 95px;
+	margin-left: 47.75rem;
+	margin-top: -230px;
+	border:1px solid red
+}
+#tertuijiana{
+	margin-left: 61.75rem;
+	margin-top: -230px;
+}
+#imgg{
+	width: 26.875rem;
+	height: 14.75rem;
+	margin-left: 34.25rem;
+	margin-top: -14.625rem;
+}
+#biaoti{
+	width: 26.875rem;
+	height: 2.75rem;
+	font-size: 21px;
+	font-weight: 700;
+	color: #666666;
+}
+#imgwenzi div:hover{
+	color: #FF5C38;
+	cursor: pointer;
+}
+#imgwenzi img:hover{
+	color: #FF5C38;
+}
+#imgwenzi{
+	float: left;
+}
+#onee{
+    width: 4.125rem;
+    margin-top: -125px;
+}
+#onee img{
+	height: 3.75rem;
+}
+#tow{
+    width: 4.125rem;
+    margin-top: -95px;
+	margin-left: 4.825rem;
+}
+#three{
+	width: 4.125rem;
+	margin-top: -90px;
+	margin-left: 10.125rem;
+}
+#four{
+	width: 4.125rem;
+	margin-top: -90px;
+	margin-left: 15.825rem;
+}
+#five{
+	width: 4.125rem;
+	margin-top: -90px;
+	margin-left: 21.825rem;
+}
+#xian{
+	width: 84.3125rem;
+	height: 2px;
+	background-color: #FF5C38;
+	margin-top: -150px;
+}
+#dibuwenzi{
+	 text-align: center;
+	 font-size: 14px;	
+	 color: #666666;
+	 margin-top: 30px;
+}
+#dibuwenzi a{
+	text-decoration: none;
+    color: #666666;
+}
+#libiaonrrr{
+	margin-left: -30px;
+}
+#dibuwenzi a:hover{
+	color: #FF5C38;
+	cursor: pointer;
+}
